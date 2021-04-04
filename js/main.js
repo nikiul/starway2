@@ -52,20 +52,21 @@ $(document).ready(function(){
 
     // Карусель
     $('.hero__carousel').owlCarousel({
-        mouseDrag: false,
-        touchDrag: false,
+        mouseDrag: true,
+        touchDrag: true,
         center: true,
         loop:true,
-        // margin:10,
         nav:true,
-        // pagination: true,
         dots: false,
-        // smartSpeed:500,
         responsive:{
             0:{
+                // touchDrag: true,
+                // mouseDrag: true,
                 items:3,
             },
             1025:{
+                touchDrag: false,
+                mouseDrag: false,
                 items:5,
             }
         }
@@ -81,7 +82,7 @@ $(document).ready(function(){
             0:{
                 items:1
             },
-            379:{
+            380:{
                 items:3
             }
         }

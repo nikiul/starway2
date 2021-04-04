@@ -909,6 +909,12 @@ img {
     background: linear-gradient(180deg, #ffe2e2 0%, #fcf1f1 16.15%);
   }
 }
+@media (max-width: 420px) {
+  .our-collections .container {
+    margin: 0;
+    padding: 0;
+  }
+}
 .our-collections__subtitle {
   padding-left: 40px;
 }
@@ -956,7 +962,7 @@ img {
 }
 @media (max-width: 420px) {
   .our-collections__item {
-    width: 110%;
+    width: 100%;
     margin-bottom: 40px;
   }
   .our-collections__item:last-child {

@@ -728,8 +728,22 @@ img {
     display: none;
   }
 }
-.hero__carousel.owl-carousel .owl-nav button.owl-next,
-.owl-carousel button.owl-dot {
+.hero__carousel.owl-theme .owl-dots {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hero__carousel.owl-theme .owl-dots {
+    margin-top: 35px;
+    display: block;
+  }
+}
+.hero__carousel.owl-theme .owl-dots .owl-dot.active span {
+  background: #e79797;
+}
+.hero__carousel.owl-theme .owl-nav [class*='owl-']:hover {
+  background-color: transparent;
+}
+.hero__carousel.owl-carousel .owl-nav button.owl-next {
   position: absolute;
   background-image: url('../img/btn-arrow.svg');
   background-repeat: no-repeat;
@@ -742,24 +756,21 @@ img {
   border-radius: 100%;
   outline: none;
 }
-.hero__carousel.owl-carousel .owl-nav button.owl-next span,
-.owl-carousel button.owl-dot span {
+.hero__carousel.owl-carousel .owl-nav button.owl-next span {
   display: none;
 }
 @media (max-width: 768px) {
-  .hero__carousel.owl-carousel .owl-nav button.owl-next,
-  .owl-carousel button.owl-dot {
-    top: 84%;
+  .hero__carousel.owl-carousel .owl-nav button.owl-next {
+    top: 76%;
+    right: 0;
   }
 }
 @media (max-width: 365px) {
-  .hero__carousel.owl-carousel .owl-nav button.owl-next,
-  .owl-carousel button.owl-dot {
-    top: 100%;
+  .hero__carousel.owl-carousel .owl-nav button.owl-next {
+    top: 84%;
   }
 }
-.hero__carousel.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot {
+.hero__carousel.owl-carousel .owl-nav button.owl-prev {
   position: absolute;
   background-image: url('../img/btn-arrow.svg');
   background-repeat: no-repeat;
@@ -774,20 +785,18 @@ img {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
-.hero__carousel.owl-carousel .owl-nav button.owl-prev span,
-.owl-carousel button.owl-dot span {
+.hero__carousel.owl-carousel .owl-nav button.owl-prev span {
   display: none;
 }
 @media (max-width: 768px) {
-  .hero__carousel.owl-carousel .owl-nav button.owl-prev,
-  .owl-carousel button.owl-dot {
-    top: 84%;
+  .hero__carousel.owl-carousel .owl-nav button.owl-prev {
+    top: 76%;
+    left: 0;
   }
 }
 @media (max-width: 365px) {
-  .hero__carousel.owl-carousel .owl-nav button.owl-prev,
-  .owl-carousel button.owl-dot {
-    top: 100%;
+  .hero__carousel.owl-carousel .owl-nav button.owl-prev {
+    top: 84%;
   }
 }
 .collection {

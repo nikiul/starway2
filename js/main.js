@@ -52,12 +52,13 @@ $(document).ready(function(){
 
     // Карусель
     $('.hero__carousel').owlCarousel({
-        mouseDrag: true,
-        touchDrag: true,
+        mouseDrag: false,
+        touchDrag: false,
         center: true,
         loop:true,
         nav:true,
-        dots: false,
+        pagination: true,
+        // dots: false,
         responsive:{
             0:{
                 // touchDrag: true,
@@ -65,8 +66,8 @@ $(document).ready(function(){
                 items:3,
             },
             1025:{
-                touchDrag: false,
-                mouseDrag: false,
+                // touchDrag: false,
+                // mouseDrag: false,
                 items:5,
             }
         }

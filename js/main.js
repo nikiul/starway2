@@ -82,7 +82,7 @@ $(document).ready(function(){
             0:{
                 items:1
             },
-            380:{
+            426:{
                 items:3
             }
         }

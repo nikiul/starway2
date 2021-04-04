@@ -52,22 +52,17 @@ $(document).ready(function(){
 
     // Карусель
     $('.hero__carousel').owlCarousel({
-        mouseDrag: false,
-        touchDrag: false,
+        // mouseDrag: false,
+        touchDrag: true,
         center: true,
         loop:true,
         nav:true,
         pagination: true,
-        // dots: false,
         responsive:{
             0:{
-                // touchDrag: true,
-                // mouseDrag: true,
                 items:3,
             },
             1025:{
-                // touchDrag: false,
-                // mouseDrag: false,
                 items:5,
             }
         }

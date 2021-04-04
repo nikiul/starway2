@@ -1,0 +1,233 @@
+.header {
+    position: fixed;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #FFE2E2;
+    transition: all 0.2s ease-in;
+}   
+
+.header.sticky {
+    top: 0;
+    background: #fcf1f1;
+    padding: 12.5px 0 11px;
+    transition: all 0.4s ease-in;
+    box-shadow: 0 12px 65px rgba(0,0,0,0.5);
+    z-index: 5;
+}
+
+.header__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        margin-right: -20px;
+    }
+
+    img {
+
+        @media (max-width: 375px) {
+            display: none;
+        }
+
+        &:last-child {
+            display: none;
+
+            @media (max-width: 375px) {
+                display: block;
+            }
+        }
+    }
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.nav__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav__item {
+    margin-right: 55px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 913px) {
+        margin-right: 30px;
+    }
+
+    @media (max-width: 800px) {
+        margin-right: 25px;
+    }
+}
+
+.item__link {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 50%;
+    color: #313131;
+    transition: .8s;
+
+
+    &:hover {
+        color: #814d4d;
+        opacity: .5;
+    }
+}
+
+.header__control {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.control__value {
+    margin-right: 5px;
+    font-size: 14px;
+    line-height: 50%;
+}
+
+.control__favorites,
+.control__profile,
+.control__cart {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #313131;
+
+    @media (max-width: 800px) {
+        margin-right: 25px;
+    }
+
+    @media (max-width: 800px) {
+        margin-right: 20px;
+    }
+
+    @media (max-width: 768px) {
+        margin-right: 30px;
+    }
+
+    @media (max-width: 375px) {
+        margin-right: 15px;
+    }
+}
+
+.control__favorites {
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.control__cart {
+    @media (max-width: 768px) {
+        margin-right: 0;
+    }
+}
+
+.control__burger {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.burger__icon {
+    position: relative;
+    top: 11px;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    transition: background-color 0.2s ease-in 0.2s;
+
+    &:before {
+        position: absolute;
+        content: "";
+        top: -8px;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+        @media (max-width: 375px) {
+            width: 24px;
+            height: 1px;
+        }
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        top: 8px;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+        @media (max-width: 375px) {
+            width: 24px;
+            height: 1px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        width: 24px;
+        height: 1px;
+    }
+}
+
+.burger__icon--active {
+    background-color: transparent;
+}
+    
+.burger__icon--active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.burger__icon--active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.mobile__burger {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        width: 30px;
+        height: 24px;
+        cursor: pointer;
+        z-index: 5;
+    }
+}

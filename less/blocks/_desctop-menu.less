@@ -1,0 +1,234 @@
+.desctop-menu {
+    position: fixed;
+    background-color: #fff;
+    transform: translateY(-150%);
+    transition: all 0.5s ease-in;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+}
+
+.desctop-menu--active {
+    transform: translateY(0%);
+}
+
+.desctop-menu__content {
+    position: relative;
+    display: flex;
+    height: 100%;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
+}
+
+.desctop-menu__imgs {
+    width: 43%;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: .8s;
+        position: absolute;
+    }
+
+    @media (max-width: 1025px) {
+        width: 30%;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.desctop-menu__mid {
+    padding-left: 126px;
+    max-width: 679px;
+    width: 100%;
+    margin: 0;
+
+    @media (max-width: 768px) {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: 670px) {
+        margin-right: 15px;
+    }
+}
+
+.desctop-menu__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.desctop__btn--mobile {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: flex;
+        width: 30px;
+        height: 24px;
+    }
+
+    @media (max-width: 670px) {
+        margin-left: 15px;
+    }
+}
+
+.desctop-btn__icon--mobile {
+    position: relative;
+    top: 11px;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    transition: background-color 0.2s ease-in 0.2s;
+    background-color: transparent;
+}
+
+.desctop-btn__icon--mobile::before {
+    transform: rotate(45deg);
+    top: 0;
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+}
+
+.desctop-btn__icon--mobile::after {
+    transform: rotate(-45deg);
+    top: 0;
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+}
+
+.desctop__btn {
+    display: flex;
+    width: 30px;
+    height: 24px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.desctop-burger__icon {
+    position: relative;
+    top: 11px;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    transition: background-color 0.2s ease-in 0.2s;
+    background-color: transparent;
+}
+.desctop-burger__icon::before {
+    transform: rotate(45deg);
+    top: 0;
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+}
+
+.desctop-burger__icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+}
+
+.desctop-menu__logo {
+
+    @media (max-width: 768px) {
+        margin-left: 20px;
+    }
+}
+
+.desctop-menu__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desctop-menu__nav {
+    margin: 0;
+    margin-bottom: 35px;
+    margin-top: 60px;
+    padding: 0;
+}
+
+.desctop-menu__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.desctop-menu__item {
+    margin-bottom: 28px;
+
+    a {
+        text-decoration: none;
+        font-family: 'Cormorant Unicase', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        margin-bottom: 28px;
+        color: #313131;
+        transition: .4s;
+
+        &:hover {
+            color: #814d4d;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.desctop-menu__socials {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 12px;
+        letter-spacing: .2em;
+    }
+
+    a {
+        margin-bottom: 10px;
+        font-size: 12px;
+        letter-spacing: .2em;
+        text-decoration: none;
+        color: rgba(49,49,49,.8);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -35,21 +35,6 @@ $(window).scroll(function() {
 
 $(document).ready(function(){
     
-    // смена картинок в меню
-    // $(".desctop-menu__imgs").vegas({
-    //     autoplay:true,
-    //     slide:0,
-    //     cover: true,
-    //     timer: false,
-    //     slides: [
-    //         { src: "img/desctop-menu/desctop-menu1.png" },
-    //         { src: "img/desctop-menu/desctop-menu2.png" },
-    //         { src: "img/desctop-menu/desctop-menu3.png" },
-    //         { src: "img/desctop-menu/desctop-menu4.png" }
-    //     ]
-    // });
-
-
     // Карусель
     $('.hero__carousel').owlCarousel({
         mouseDrag: false,

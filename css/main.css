@@ -1443,25 +1443,21 @@ img {
 }
 .products {
   padding-top: 230px;
-  padding-bottom: 130px;
-  background-color: #FCF1F1;
+  background-color: #ffe2e2;
 }
 @media (max-width: 768px) {
   .products {
     padding-top: 180px;
-    padding-bottom: 90px;
   }
 }
 @media (max-width: 680px) {
   .products {
     padding-top: 100px;
-    padding-bottom: 100px;
   }
 }
 @media (max-width: 680px) {
   .products {
     padding-top: 30px;
-    padding-bottom: 30px;
   }
 }
 @media (max-width: 420px) {
@@ -1697,10 +1693,15 @@ img {
     top: -10%;
   }
 }
+.products__bg {
+  width: 100%;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffe2e2), color-stop(0.01%, #ffe2e2), to(#fcf1f1));
+  background: linear-gradient(180deg, #ffe2e2, #ffe2e2 0.01%, #fcf1f1);
+}
 .inst {
   position: relative;
   padding-top: 200px;
-  padding-bottom: 40px;
   background-color: #FCF1F1;
 }
 .inst:before {
@@ -1716,11 +1717,6 @@ img {
     padding-bottom: 0;
   }
 }
-@media (max-width: 375px) {
-  .inst {
-    padding-bottom: 20px;
-  }
-}
 .inst__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1731,6 +1727,7 @@ img {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding-bottom: 50px;
 }
 @media (max-width: 680px) {
   .inst__content {
@@ -1992,28 +1989,12 @@ img {
   }
 }
 .inst__bg {
-  display: none;
-}
-@media (max-width: 768px) {
-  .inst__bg {
-    display: block;
-    width: 100%;
-    height: 164px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffe2e2), to(#fcf1f1));
-    background: linear-gradient(180deg, #ffe2e2 0%, #fcf1f1 100%);
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
-  }
-}
-@media (max-width: 540px) {
-  .inst__bg {
-    height: 80px;
-  }
-}
-@media (max-width: 375px) {
-  .inst__bg {
-    display: none;
-  }
+  width: 100%;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffe2e2), color-stop(0.01%, #ffe2e2), to(#fcf1f1));
+  background: linear-gradient(180deg, #ffe2e2, #ffe2e2 0.01%, #fcf1f1);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 .fashion {
   position: relative;

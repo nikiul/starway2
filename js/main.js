@@ -35,6 +35,8 @@ $(window).scroll(function() {
 
 $(document).ready(function(){
     
+    $.fancybox.defaults.backFocus = false;
+
     // смена картинок в меню
     // $(".desctop-menu__imgs").vegas({
     //     autoplay:true,

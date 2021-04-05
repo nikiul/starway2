@@ -7,10 +7,6 @@
         padding-top: 100px;
         padding-bottom: 60px;
     }
-
-    @media (max-width: 375px) {
-        padding-bottom: 80px;
-    }
 }
 
 .hero__content {
@@ -39,6 +35,38 @@
     position: relative;
     display: flex;
     justify-content: center;
+
+    a {
+        position: relative;
+
+        &:hover {
+            &::before {
+                position: absolute;
+                content: '';
+                display: block;
+                background: rgba(255,176,176,.41);
+                z-index: 5;
+                width: 80%;
+                height: 80%;
+                top: 10%;
+                left: 10%;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                background: url('../img/loop.svg') 50% no-repeat;
+                z-index: 6;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                right: 0;
+                left: 0;
+                width: 63px;
+                height: 63px;
+            }
+        }
+    }
 
     img {
         position: relative;
@@ -138,6 +166,10 @@
         right: 0;
     }
 
+    @media (max-width: 540px) {
+        display: none;
+    }
+
     @media (max-width: 365px) {
         top: 84%
     }
@@ -164,6 +196,10 @@
     @media (max-width: 768px) {
         top: 76%;
         left: 0;
+    }
+
+    @media (max-width: 540px) {
+        display: none;
     }
 
     @media (max-width: 365px) {

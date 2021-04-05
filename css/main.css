@@ -1005,7 +1005,7 @@ img {
 }
 @media (max-width: 540px) {
   .our-collections {
-    padding-bottom: 0;
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 375px) {
@@ -1393,16 +1393,23 @@ img {
   position: relative;
   background: #fcf1f1;
 }
-@media (max-width: 768px) {
-  .video {
-    min-height: 400px;
-    max-height: 400px;
-  }
-}
-@media (max-width: 420px) {
+@media (max-width: 1040px) {
   .video {
     min-height: 300px;
     max-height: 300px;
+  }
+}
+@media (max-width: 560px) {
+  .video {
+    min-height: 200px;
+    max-height: 200px;
+  }
+}
+@media (max-width: 365px) {
+  .video {
+    min-height: 170px;
+    max-height: 170px;
+    height: auto;
   }
 }
 .video__bg {

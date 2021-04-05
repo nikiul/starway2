@@ -367,6 +367,8 @@ img {
   width: 730px;
   z-index: 5;
   padding: 25px 50px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   overflow-y: scroll;
 }
 .desctop-menu::-webkit-scrollbar {

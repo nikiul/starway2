@@ -2034,12 +2034,6 @@ img {
     padding-bottom: 60px;
   }
 }
-@media (max-width: 375px) {
-  .fashion {
-    padding-top: 80px;
-    background: linear-gradient(179.95deg, #fcf1f1 0.04%, #ffe2e2 24.07%);
-  }
-}
 .fashion__content {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -358,8 +358,8 @@ img {
 .desctop-menu {
   position: fixed;
   background-color: #fff;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   top: 0;

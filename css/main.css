@@ -2267,16 +2267,6 @@ img {
   -webkit-animation: 30s linear 0s normal none infinite running rot;
   width: 100%;
 }
-@media (max-width: 1200px) {
-  .contacts__ring {
-    height: 80vh;
-  }
-}
-@media (max-width: 900px) {
-  .contacts__ring {
-    height: 60vh;
-  }
-}
 @keyframes rot {
   0% {
     -webkit-transform: rotate(0deg);

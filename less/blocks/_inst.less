@@ -1,7 +1,16 @@
 .inst {
+    position: relative;
     padding-top: 200px;
     padding-bottom: 40px;
     background-color: #FCF1F1;
+
+    &:before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        width: 100%;
+        background-color: #FFE2E2;
+    }
 
     @media (max-width: 768px) {
         padding-top: 50px;
@@ -259,6 +268,10 @@
         height: 164px;
         background: linear-gradient(180deg, #FFE2E2 0%, #FCF1F1 100%);
         transform: rotate(-180deg);
+    }
+
+    @media (max-width: 420px) {
+        height: 80px;
     }
 
     @media (max-width: 375px) {

@@ -7,9 +7,12 @@
         padding-bottom: 0;
         background-color: #FFE2E2;
     }
+
+    @media (max-width: 420px) {
+        padding-top: 45px;
+    }
     
     @media (max-width: 375px) {
-        padding-top: 60px;
         padding-bottom: 70px;
     }
 }
@@ -28,6 +31,11 @@
 
         @media (max-width: 768px) {
             display: block;
+        }
+
+        @media (max-width: 420px) {
+            height: 130px;
+            background: linear-gradient(180deg, #FFE2E2 0%, #FFE2E2 0.01%, #FCF1F1 80%);
         }
 
         @media (max-width: 375px) {
@@ -58,6 +66,10 @@
 
     @media (max-width: 680px) {
         flex-direction: column-reverse;
+    }
+
+    @media (max-width: 420px) {
+        margin-bottom: 0;
     }
 }
 
@@ -194,6 +206,7 @@
         bottom: 0;
         width: 35%;
         right: -15px;
+        height: auto;
     }
 }
 
@@ -211,6 +224,7 @@
 
     @media (max-width: 420px) {
         width: 70%;
+        height: auto;
     }
 }
 

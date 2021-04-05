@@ -68,7 +68,7 @@ $(document).ready(function(){
         }
     })
 
-
+    // Карусель
     $('.products__tablet').owlCarousel({
         loop:true,
         margin:10,

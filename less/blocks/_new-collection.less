@@ -3,18 +3,19 @@
     padding-bottom: 260px;
 
     @media (max-width: 768px) {
-        padding-top: 90px;
-        padding-bottom: 0;
-        background-color: #FFE2E2;
+        // padding-top: 90px;
+        // padding-bottom: 0;
+        // background-color: #FFE2E2;
+        display: none;
     }
 
-    @media (max-width: 420px) {
-        padding-top: 45px;
-    }
+    // @media (max-width: 420px) {
+    //     padding-top: 45px;
+    // }
     
-    @media (max-width: 375px) {
-        padding-bottom: 70px;
-    }
+    // @media (max-width: 375px) {
+    //     padding-bottom: 70px;
+    // }
 }
 
 .new-collection--bg {
@@ -60,6 +61,46 @@
         align-items: center;
     }
 
+    // @media (max-width: 768px) {
+    //     margin-bottom: 40px;
+    // }
+
+    @media (max-width: 680px) {
+        flex-direction: column-reverse;
+    }
+
+    // @media (max-width: 540px) {
+    //     margin-bottom: 0;
+    // }
+}
+
+.new-collection__mid {
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 130px;
+
+    @media (max-width: 1110px) {
+        padding: 0;
+    }
+}
+
+.new-collection__bottom {
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1110px) {
+        padding: 0;
+        align-items: end;
+    }
+
+    @media (max-width: 946px) {
+        align-items: center;
+    }
+
     @media (max-width: 768px) {
         margin-bottom: 40px;
     }
@@ -73,27 +114,23 @@
     }
 }
 
-.new-collection__bottom {
-    padding-right: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media (max-width: 1110px) {
-        padding: 0;
-    }
-
-    @media (max-width: 768px) {
-        display: none;
-    }
-}
-
 .new-collection__desc {
     
 
     @media (max-width: 420px) {
         width: 100%;
     }
+}
+
+.new-collection__bottom-text {
+    margin: 0;
+    font-family: 'Cormorant Unicase', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #313131;
 }
 
 .new-collection__subtitle {

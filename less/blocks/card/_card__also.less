@@ -1,0 +1,133 @@
+.card__also {
+    width: 100%;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        background-color: #FFB0B0;
+    }
+}
+
+.also__content {
+    @media (max-width: 768px) {
+        padding-bottom: 100px;
+    }
+
+    @media (max-width: 418px) {
+        padding-bottom: 0;
+    }
+}
+
+.subtitle__also {
+    text-align: center;
+    margin-bottom: 100px;
+
+    // @media (max-width: 515px) {
+    //     margin-bottom: 100px;
+    // }
+}
+
+.also__carousel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.also__carousel-item {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    img {
+        margin-bottom: 20px;
+    }
+}
+
+.also__gradient {
+    width: 100%;
+    height: 310px;
+    background: linear-gradient(180deg, #FFE2E2 0%, #FFB0B0 0.01%, #FCF1F1 100%);
+    transform: rotate(-180deg);
+
+    @media (max-width: 768px) {
+        height: 100px;
+    }
+}
+
+.also__carousel.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    background-image: url('../img/btn-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9px 16px;
+    background-color: #FFE2E2;
+    top: -16%;
+    right: 55px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    transform: rotate(-180deg);
+    outline: none;
+
+    span {
+        display: none;
+    }
+
+    @media (max-width: 480px) {
+        top: -20%;   
+    }
+
+    @media (max-width: 425px) {
+        top: -22%;
+    }
+
+    @media (max-width: 418px) {
+        top: -10%;
+    }
+}
+
+.also__carousel.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    background-image: url('../img/btn-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9px 16px;
+    background-color: #FFE2E2;
+    top: -16%;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    outline: none;
+
+    span {
+        display: none;
+    }
+
+    @media (max-width: 480px) {
+        top: -20%;   
+    }
+
+    @media (max-width: 425px) {
+        top: -22%;
+    }
+
+    @media (max-width: 418px) {
+        top: -10%;
+    }
+}
+
+.also__carousel-item img {
+
+    @media (max-width: 418px) {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}

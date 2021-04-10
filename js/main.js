@@ -229,12 +229,6 @@ $('.card__slider-big').slick({
             nextArrow: '<div class="card__slider-next"></div>',
 	      }
 	    }
-	    // {
-	    //   breakpoint: 480,
-	    //   settings: {
-	    //     slidesToShow: 1,
-	    //   }
-	    // }
     ]
 });
   

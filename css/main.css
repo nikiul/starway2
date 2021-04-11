@@ -5104,7 +5104,7 @@ img {
 }
 .aboutUs__hero {
   background-color: #fcf1f1;
-  padding-top: 50px;
+  padding-top: -50px;
   padding-bottom: 300px;
 }
 @media (max-width: 825px) {

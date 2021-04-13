@@ -9,7 +9,14 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -29,6 +36,10 @@ body {
 .body__lock {
     height: 100%;
     overflow: hidden;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 img{

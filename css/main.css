@@ -30,6 +30,9 @@ body {
 .body--pink {
   background-color: #FFB0B0;
 }
+.body--gradient {
+  background: linear-gradient(90.17deg, #ffe2e2 45.42%, #fcf1f1 96.31%) !important;
+}
 .body__lock {
   height: 100%;
   overflow: hidden;
@@ -430,14 +433,6 @@ img {
   height: 150px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fcf1f1), to(#ffb0b0));
   background: linear-gradient(180deg, #fcf1f1 0%, #ffb0b0 100%);
-}
-.footer__bg2::before {
-  position: absolute;
-  content: '';
-  top: 2px;
-  width: 100%;
-  height: 2px;
-  background-color: #ffb0b0;
 }
 @media (max-width: 768px) {
   .footer__bg2 {
@@ -6131,6 +6126,179 @@ img {
     margin-bottom: 10px;
     font-size: 12px;
     line-height: 12px;
+  }
+}
+.error {
+  padding-top: 100px;
+}
+@media (max-width: 578px) {
+  .error {
+    padding-top: 130px;
+    padding-bottom: 40px;
+  }
+}
+.error__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 1920px) and (max-height: 1080px) {
+  .error__content {
+    margin-bottom: -22%;
+  }
+}
+@media (max-width: 768px) {
+  .error__content {
+    margin-bottom: -19%;
+  }
+}
+@media (max-width: 578px) {
+  .error__content {
+    margin-bottom: 0;
+  }
+}
+.error__ring {
+  background-image: url('../img/404/404-img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 940px;
+  width: 940px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  animation: 5s linear 0s normal none infinite running rot;
+  -webkit-animation: 30s linear 0s normal none infinite running rot;
+}
+@media (max-width: 974px) {
+  .error__ring {
+    width: 740px;
+    height: 740px;
+  }
+}
+@media (max-width: 768px) {
+  .error__ring {
+    width: 540px;
+    height: 540px;
+  }
+}
+@media (max-width: 578px) {
+  .error__ring {
+    display: none;
+  }
+}
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.error__text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.error__text p {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #313131;
+}
+.error__text p:first-child {
+  margin-bottom: 50px;
+  font-family: 'Cormorant Unicase', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #313131;
+}
+@media (max-width: 768px) {
+  .error__text p:first-child {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .error__text p {
+    font-size: 14px;
+    line-height: 180%;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 578px) {
+  .error__text {
+    position: relative;
+    text-align: center;
+  }
+}
+.error__btn {
+  padding-left: 123px;
+  padding-right: 123px;
+}
+@media (max-width: 768px) {
+  .error__btn {
+    padding-left: 82px;
+    padding-right: 82px;
+  }
+}
+@media (max-width: 450px) {
+  .error__btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,138 @@
+.error {
+    padding-top: 100px;
+
+    @media (max-width: 578px) {
+        padding-top: 130px;
+        padding-bottom: 40px;
+    }
+}
+
+.error__content {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: 1920px) {
+        @media (max-height: 1080px) {
+            margin-bottom: -22%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: -19%;
+    }
+
+    @media (max-width: 578px) {
+        margin-bottom: 0;
+    }
+}
+
+.error__ring {
+    background-image: url('../img/404/404-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 940px;
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: 5s linear 0s normal none infinite running rot;
+    -webkit-animation: 30s linear 0s normal none infinite running rot;
+
+    @media (max-width: 974px) {
+        width: 740px;
+        height: 740px;
+    }
+
+    @media (max-width: 768px) {
+        width: 540px;
+        height: 540px;
+    }
+
+    @media (max-width: 578px) {
+        display: none;
+    }
+}
+
+@keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @-webkit-keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.error__text {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        margin: 0;
+        margin-bottom: 50px;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        color: #313131;
+
+        &:first-child {
+            margin-bottom: 50px;
+            font-family: 'Cormorant Unicase', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 60px;
+            line-height: 100%;
+            letter-spacing: -0.02em;
+            color: #313131;
+
+            @media (max-width: 768px) {
+                font-size: 30px;
+                margin-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 180%;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 578px) {
+        position: relative;
+        text-align: center;
+    }
+}
+
+.error__btn {
+    padding-left: 123px;
+    padding-right: 123px;
+
+    @media (max-width: 768px) {
+        padding-left: 82px;
+        padding-right: 82px;
+    }
+
+    @media (max-width: 450px) {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

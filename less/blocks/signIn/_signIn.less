@@ -1,0 +1,238 @@
+.signIn {
+    // background: linear-gradient(90.17deg,#ffe2e2 45.42%,#fcf1f1 96.31%)!important;
+    padding-top: 180px;
+    padding-bottom: 240px;
+    background-image: url('../img/reg-signIn/signIn-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media (max-width: 768px) {
+        padding-top: 150px;
+        padding-bottom: 80px;
+        background-position: 26% 4%;
+        background-color: #fcf1f1;
+    }
+
+    @media (max-width: 450px) {
+        background: linear-gradient(180deg, #FFE2E2 0%, #FCF1F1 53.12%);
+    }
+}
+
+.signIn__content {
+
+}
+
+.signIn__top {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        margin-bottom: 80px;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    @media (max-width: 450px) {
+        justify-content: center;
+    }
+}
+
+.signIn__left {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        margin-bottom: 60px;
+        width: 250px;
+    }
+
+    @media (max-width: 375px) {
+        width: 100%;
+    }
+}
+
+.signIn__title {
+    margin: 0;
+    margin-bottom: 60px;
+    font-family: 'Cormorant Unicase',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #313131;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 375px) {
+        text-align: center;
+    }
+}
+
+.signIn__desc {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 170%;
+    letter-spacing: 0.05em;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 375px) {
+        text-align: center;
+    }
+}
+
+.signIn__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signIn__input {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 70%;
+    letter-spacing: 0.05em;
+    color: rgba(49, 49, 49, 0.6);
+    border: 1px solid rgba(49, 49, 49, 0.8);    
+    background-color: #FFE2E2;
+    outline: none;
+
+    @media (max-width: 768px) {
+        background-color: transparent;
+
+        &:first-child {
+            display: none;
+        }
+    }
+}
+
+.signIn__input--tablet {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.signIn__btn1 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 60%;
+    letter-spacing: 0.05em;
+    color: #313131;
+    background: #FFB0B0;
+    border: none;
+    outline: none;
+    background-image: url('../img/btn-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 65% center;
+    cursor: pointer;
+    transition: all 0.8s ease-in;
+
+    &:hover {  
+        background-color: #e79797;
+    }
+}
+
+.signIn__right {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        width: 250px;
+    }
+
+    @media (max-width: 375px) {
+        width: 100%;
+    }
+}
+
+.signIn__btn2 {
+    display: flex;
+    justify-content: center;
+}
+
+.signIn__bottom {
+    display: none;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (max-width: 450px) {
+        flex-direction: column;
+    }
+}
+
+.signIn__new-collection,
+.signIn__gifts {
+    width: 48%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    p {
+        margin: 0;
+        position: absolute;
+        font-family: 'Cormorant Unicase',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 100%;
+        text-decoration: none;
+        letter-spacing: -0.02em;
+        color: #FCF1F1;
+
+        @media (max-width: 1142px) {
+            font-size: 50px;
+        }
+
+        @media (max-width: 944px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 585px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 450px) {
+            font-size: 30px;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 450px) {
+        margin-bottom: 40px;
+        width: 100%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

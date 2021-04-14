@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="css/main.css">
     <title>STARWAY</title>
 </head>
-<body>
+<body class="body--gradient">
 
-    <header class="header">
+    <header class="header signIn__header">
 
         <div class="container">
 
@@ -175,43 +175,78 @@
 
         </section>
 
-        <section class="contacts-page">
+        <section class="signIn">
 
             <div class="container">
 
-                <div class="contacts-page__content">
+                <div class="signIn__content">
 
-                    <div class="contacts-page__ring"></div>
+                    <div class="signIn__top">
 
-                    <div class="contacts-page__text">
-                        <h1 class="title title__contacts-page">Свяжитесь с нами</h1>
-                        <p class="contacts-page__subtitle1">Наше производство находится <br> в городе Тула</p>
-                        <p class="contacts-page__subtitle2">Контактная информация</p>
-                        <a href="#" class="contacts-page__link">
-                            <img src="img/contacts__page/contacts-page-inst.svg" alt="">
-                            @starway.shop
-                        </a>
-                        <a href="#" class="contacts-page__link">
-                            <img src="img/contacts__page/contacts-page-vk.svg" alt="">
-                            vk.com/starway.shop
-                        </a>
-                        <a href="tel:89999999999" class="contacts-page__link">
-                            <img src="img/contacts__page/contacts-page-tel.svg" alt="">
-                            8(999) 999 99 99
-                        </a>
+                        <div class="signIn__left">
+
+                            <h2 class="signIn__title">Войти в систему</h2>
+
+                            <p class="signIn__desc">
+                                Пожалуйста, введите свой адрес электронной почты и пароль ниже, чтобы получить доступ к своей учетной записи.
+                            </p>
+
+                            <form action="" class="signIn__form">
+
+                                <input type="email" class="signIn__input" placeholder="Введите адрес электронной почты">
+
+                                <input type="email" class="signIn__input signIn__input--tablet" placeholder="Введите адрес Email">
+
+                                <input type="password" class="signIn__input" placeholder="Пароль">
+
+                                <input type="submit" class="signIn__btn1" value="войти">
+
+                            </form>
+
+                        </div>
+
+                        <div class="signIn__right">
+
+                            <h2 class="signIn__title">Завести аккаунт</h2>
+
+                            <p class="signIn__desc">
+                                Зарегистрируйтесь, и используйте преимущество  учетной записи.
+                            </p>
+
+                            <a href="reg.html" class="btn signIn__btn2">
+                                <span>регистрация</span>
+                                <img src="img/btn-arrow.svg" alt="">
+                            </a>
+
+                        </div>
+
                     </div>
+
+                    <div class="signIn__bottom">
+
+                        <a href="#" class="signIn__new-collection">
+                            <p>Новая коллекция</p>
+                            <img src="img/reg-signIn/signIn-new-collection.png" alt="">
+                        </a>
+
+                        <a href="#" class="signIn__gifts">
+                            <p>Подарочные карты</p>
+                            <img src="img/reg-signIn/signIn-gifts.png" alt="">
+                        </a>
+
+                    </div>
+
                 </div>
 
             </div>
-
 
         </section>
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer__signIn">
 
-        <div class="footer__bg"></div>
+        <div class="footer__bg2"></div>
 
         <div class="container">
 

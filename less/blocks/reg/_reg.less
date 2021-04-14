@@ -1,0 +1,101 @@
+.reg {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @media (max-width: 768px) {
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+}
+
+.reg__content {
+    width: 530px;
+    padding: 100px 95px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE2E2;
+
+    @media (max-width: 768px) {
+        width: 450px;
+        padding: 60px;
+    }
+
+    @media (max-width: 480px) {
+        width: 420px;
+        padding: 40px;
+    }
+
+    @media (max-width: 450px) {
+        width: 100%;
+        padding: 0;
+        background-color: transparent;
+    }
+}
+
+.reg__title {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 450px) {
+        margin-bottom: 60px;
+    }
+}
+
+.reg__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reg__input {
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 70%;
+    letter-spacing: 0.05em;
+    color: rgba(49, 49, 49, 0.6);
+    border: 1px solid rgba(49, 49, 49, 0.8);
+    background-color: transparent;
+}
+
+.reg__btn {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 60%;
+    letter-spacing: 0.05em;
+    color: #313131;
+    background: #FFB0B0;
+    border: none;
+    outline: none;
+    background-image: url('../img/btn-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 70% center;
+    cursor: pointer;
+    transition: all 0.8s ease-in;
+
+    &:hover {  
+        background-color: #e79797;
+    }
+
+    @media (max-width: 375px) {
+        background-position: 75% center;
+    }
+}

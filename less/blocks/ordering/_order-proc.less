@@ -1,0 +1,134 @@
+.order-proc {
+    padding-top: 236px;
+    padding-bottom: 160px;
+
+    @media (max-width: 868px) {
+        padding-top: 123px;
+        padding-bottom: 100px;
+    }
+}
+
+.order-proc__content {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: 555px) {
+        justify-content: center;
+    }
+}
+
+.order-proc__left {
+    width: 42%;
+
+    @media (max-width: 868px) {
+        width: 370px;
+    }
+    @media (max-width: 676px) {
+        width: 300px;
+    }
+}
+
+.order-proc__title {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 60px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+    @media (max-width: 868px) {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 676px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 555px) {
+        text-align: center;
+        // font-size: 30px;
+        line-height: 100%;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 30px;
+    }
+}
+
+.order-proc__desc {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    color: #313131;
+
+    @media (max-width: 868px) {
+        font-size: 14px;
+        line-height: 180%;
+    }
+
+    @media (max-width: 676px) {
+        font-size: 12px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 14px;
+    }
+}
+
+.order-proc__connection {
+    margin: 0;
+    margin-bottom: 2em;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    color: rgba(49, 49, 49, 0.8);
+
+    a {
+        text-decoration: none;
+        color: rgba(49, 49, 49, 0.8);
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+
+        br {
+            display: none;
+
+            @media (max-width: 676px) {
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 868px) {
+        font-size: 14px;
+        line-height: 180%;
+    }
+
+    @media (max-width: 676px) {
+        font-size: 12px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 14px;
+    }
+}
+
+.order-proc__right {
+
+    @media (max-width: 868px) {
+        width: 250px;
+        height: 375px;
+    }
+
+    @media (max-width: 676px) {
+        width: 200px;
+        height: 325px;
+    }
+
+    @media (max-width: 555px) {
+        display: none;
+    }
+}

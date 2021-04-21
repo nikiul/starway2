@@ -175,215 +175,179 @@
 
         </section>
 
-        <section class="ordering">
+        <section class="personal-data">
+            
+            <ul class="presonal-data__nav">
+
+                <li class="personal-data__nav-item">
+                    <img src="img/personal-area/personal-area-nav-img.svg" alt="">
+                    <a class="nav-item__link nav-item__link--active" href="personal-data.html">Личные данные</a>
+                </li>
+                <li class="personal-data__nav-item">
+                    <a class="nav-item__link" href="personal-history.html">История заказов</a>
+                </li>
+                <li class="personal-data__nav-item">
+                    <a class="nav-item__link" href="personal-wishlist.html">Список желаний</a>
+                </li>
+                <li class="personal-data__nav-item">
+                    <a class="nav-item__link" href="personal-offer.html">Предложение для вас </a>
+                </li>
+
+            </ul>
+
+            <!-- <div class="personal__nav--mobile">
+
+                <a class="nav--mobile" href="personal-data.html">
+                    Личные данные
+                    <img class="" src="img/personal-area/personal-area-nav-img.svg" alt="">
+                </a>
+
+                <ul class= "nav--mobile-list">
+                    <li>
+                        <a href="personal-data.html">История заказов</a>
+                    </li>
+                    <li>
+                        <a href="personal-history.html">Список желаний</a>
+                    </li>
+                    <li>
+                        <a href="personal-data.html">Предложение для вас</a>
+                    </li>
+                </ul>
+
+            </div> -->
 
             <div class="container">
 
-                <!-- <h1 class="ordering__title">Оформление заказа</h1> -->
+                <div class="personal-data__content">
 
-                <div class="ordering__content">
+                    <div class="personal-data__info">
 
-                    <form class="ordering__form">
+                        <h1 class="title info__title">Ваша информация</h1>
 
-                        <h1 class="ordering__title">Оформление заказа</h1>
+                        <form action="POST" class="info__form">
 
-                        <div class="ordering__adress">
-
-                            <h2 class="adress__title">Адрес доставки</h2>
-
-                            <input type="text" class="adress__input" placeholder="Имя">
-                            <input type="text" class="adress__input" placeholder="Фамилия">
-                            <input type="text" class="adress__input" placeholder="Телефон">
-                            <input type="email" class="adress__input" placeholder="Email">
-
-                            <div class="adress__wrap">
-                                <input type="text" class="adress__input" placeholder="Город">
-                                <input type="number" class="adress__input" placeholder="Индекс">
+                            <div class="form__data">
+                                <h3>Данные</h3>
+                                <input type="text" class="form__input" placeholder="Имя">
+                                <input type="text" class="form__input" placeholder="Фамилия">
+                                <input type="tel" class="form__input" placeholder="Телефон">
+                                <input type="email" class="form__input" placeholder="Email">
                             </div>
 
-                            <input type="text" class="adress__input" placeholder="Адрес доставки">
+                            <div class="form__bday">
+                                <h3>День рождения</h3>
 
-                        </div>
+                                <div class="bday__wrap">
 
-                        <div class="ordering__method-delivery">
-
-                            <h2 class="method__title">Способ доставки</h2>
-
-                            <p class="method__subtitle">Цена и сроки доставки зависят от региона.</p>
-
-                            <div class="method__choice">
-
-                                <label class="choice__item">
-                                    <input type="radio" name="delivery__choice" class="choice__item-radio">
-                                    <span class="custom-radio"></span>
-
-                                    <div class="choice__item-text">
-                                        <p>Курьерская служба СДЭК</p>
-                                        <p>Бесплатная доставка при заказе от 5000 ₽</p>
-                                    </div>
-
-                                </label>
-
-                                <label class="choice__item">
-                                    <input type="radio" name="delivery__choice" class="choice__item-radio"> 
-                                    <span class="custom-radio"></span>
-
-                                    <div class="choice__item-text">
-                                        <p>Почта России</p>
-                                        <p>Бесплатная доставка при заказе от 5000 ₽</p>
-                                    </div>
-
-                                </label>
-
-                            </div>
-
-                        </div>
-
-                        <div class="ordering__method-payment">
-
-                            <h2 class="method__title">Способ оплаты</h2>
-
-                            <p class="method__subtitle">Бесплатная доставка при заказе от 5000 ₽</p>
-
-                            <div class="method__choice">
-
-                                <label class="choice__item">
-                                    <input type="radio" name="payment__choice" class="choice__item-radio">
-                                    <span class="custom-radio"></span>
-
-                                    <div class="choice__item-text">
-                                        <p>Наложенный платеж </p>
-                                    </div>
-
-                                </label>
-
-                                <label class="choice__item">
-                                    <input type="radio" name="payment__choice" class="choice__item-radio"> 
-                                    <span class="custom-radio"></span>
-
-                                    <div class="choice__item-text">
-                                        <p>Перевод на сбербанк </p>
-                                    </div>
-
-                                </label>
-
-                            </div>
-
-                        </div>
-
-                        <div class="ordering__privacy-policy">
-
-                            <label class="privacy-policy__item">
-                                <input type="checkbox" class="privacy-policy__checkbox">
-                                <span class="custom-checkbox"></span>
-                                <p>Я хочу получать информацию о новинках и акциях</p>
-                            </label>
-
-                            <label class="privacy-policy__item">
-                                <input type="checkbox" class="privacy-policy__checkbox">
-                                <span class="custom-checkbox"></span>
-                                <p>Я принимаю <a href="#">Политику Kонфиденциальности</a> и <br> <a href="#">Условия продажи</a></p>
-                            </label>
-
-                        </div>
-
-                        <div class="order-list__sum order-list__sum--tablet">
-
-                            <h2 class="subtitle sum__title">Сведения</h2>
-
-                            <div class="sum__subtotal">
-                                <p>Промежуточный итог</p>
-                                <p>4000₽</p>
-                            </div>
-                            <div class="sum__delivery">
-                                <p>Доставка</p>
-                                <p>250₽</p>
-                            </div>
-                            <div class="sum__discont">
-                                <p>Скидка</p>
-                                <p>250₽</p>
-                            </div>
-                            <div class="sum__total">
-                                <p>Всего</p>
-                                <p>4000₽</p>
-                            </div>
-
-                        </div>
-
-                        <input type="submit" class="ordering__btn" value="оформить">
-
-                    </form>
-
-                    <div class="order-list">
-
-                        <div class="order-list__item-wrap">
-
-                            <h2 class="order-list__title">Сумка для покупок</h2>
-
-                            <div class="order-list__item">
-
-                                <img src="img/ordering/order-lsit-item-img.png" alt="">
-
-                                <div class="order-list__item-desc">
-
-                                    <P class="order-list__item-name">Шёлковая пижама</P>
-                                    <P class="order-list__item-value">2000₽</P>
-                                    <P class="order-list__item-size">Размер: <span>s</span></P>
-                                    <div class="order-list__item-color">
-                                        <p>Цвет</p>
-                                        <div class="order-list__item-color-value">
-                                            <span></span>
+                                    <!-- <div class="bday__list-wrap">
+                                        <div class="bday__current">
+                                            <a href="#" class="bday-current__elem">День</a>
+                                            <img src="img/btn-arrow.svg" alt="" class="bday-btn">
                                         </div>
+                                        <ul class="bday__list">
+                                            <li class="bday__elem">День</li>
+                                            <li class="bday__elem">День</li>
+                                            <li class="bday__elem">День</li>
+                                            <li class="bday__elem">День</li>
+                                            <li class="bday__elem">День</li>
+                                        </ul>
+                                    </div> -->
+
+                                    <div class="bday__wrap">
+                                        <select name="day" form="pers-info-form">
+                                          <option selected="" disabled="">День</option>
+                                        </select>
+                                        <select name="month" form="pers-info-form">
+                                          <option selected="" disabled="">Месяц</option>
+                                        </select>
+                                        <select name="year" form="pers-info-form">
+                                          <option selected="" disabled="">Год</option>
+                                        </select>
                                     </div>
+
+                                    <!-- <div class="bday__list-wrap">
+                                        <div class="bday__current">
+                                            <span href="#" class="bday-current__elem">Месяц</span>
+                                            <img src="img/btn-arrow.svg" alt="" class="bday-btn">
+                                        </div>
+                                        <ul class="bday__list">
+                                            <li class="bday__elem">Месяц</li>
+                                            <li class="bday__elem">Месяц</li>
+                                            <li class="bday__elem">Месяц</li>
+                                            <li class="bday__elem">Месяц</li>
+                                            <li class="bday__elem">Месяц</li>
+                                        </ul>
+                                    </div> -->
+
+                                    <!-- <div class="bday__list-wrap">
+                                        <div class="bday__current">
+                                            <span href="#" class="bday-current__elem">Год</span>
+                                            <img src="img/btn-arrow.svg" alt="" class="bday-btn">
+                                        </div>
+                                        <ul class="bday__list">
+                                            <li class="bday__elem">Год</li>
+                                            <li class="bday__elem">Год</li>
+                                            <li class="bday__elem">Год</li>
+                                            <li class="bday__elem">Год</li>
+                                            <li class="bday__elem">Год</li>
+                                        </ul>
+                                    </div> -->
 
                                 </div>
 
                             </div>
 
-                            <div class="order-list__item">
+                            <input type="submit" class="info__form-btn" value="сохранить">
 
-                                <img src="img/ordering/order-lsit-item-img.png" alt="">
+                        </form>
 
-                                <div class="order-list__item-desc">
+                        <form action="POST" class="info__pass">
 
-                                    <P class="order-list__item-name">Шёлковая пижама</P>
-                                    <P class="order-list__item-value">2000₽</P>
-                                    <P class="order-list__item-size">Размер: <span>s</span></P>
-                                    <div class="order-list__item-color">
-                                        <p>Цвет</p>
-                                        <div class="order-list__item-color-value">
-                                            <span></span>
-                                        </div>
-                                    </div>
+                            <h3>Сменить пароль</h3>
+                            <input type="text" class="form__input" placeholder="Новый пароль">
+                            <input type="text" class="form__input" placeholder="Подтвердите пароль">
+                            <input type="submit" class="pass__form-btn" value="сохранить пароль">
 
-                                </div>
+                        </form>
 
-                            </div>
-                            
-                        </div>
+                        
+                    </div>
+                    
+                    <!-- <div class="personal-data__subscribe">
 
-                        <div class="order-list__sum">
+                        <h3>НОВОСТНАЯ РАССЫЛКА</h3>
 
-                            <h2 class="subtitle sum__title">Сведения</h2>
+                        <h2 class="data__subscribe-title">Подпишитесь, чтобы получать последние обновления</h2>
+                        <h2 class="data__subscribe-title data__subscribe-title--tablet">Получайте новости <br> обновлений коллекции</h2>
 
-                            <div class="sum__subtotal">
-                                <p>Промежуточный итог</p>
-                                <p>4000₽</p>
-                            </div>
-                            <div class="sum__delivery">
-                                <p>Доставка</p>
-                                <p>250₽</p>
-                            </div>
-                            <div class="sum__discont">
-                                <p>Скидка</p>
-                                <p>250₽</p>
-                            </div>
-                            <div class="sum__total">
-                                <p>Всего</p>
-                                <p>4000₽</p>
-                            </div>
+                        <form action="POST" class="info__subscribe">
 
-                        </div>
+                            <input type="email" class="form__input form__input-subscribe" placeholder="Укажите свой адрес электронной почты">
+
+                            <input type="email" class="form__input form__input-subscribe--tablet" placeholder="Введите Email">
+
+                            <input type="submit" class="subscribe__form-btn" value="подписаться">
+
+                        </form>
+
+                    </div> -->
+
+                    <div class="personal__subscribe">
+
+                        <h3>НОВОСТНАЯ РАССЫЛКА</h3>
+
+                        <h2 class="personal__subscribe-title">Подпишитесь, чтобы получать последние обновления</h2>
+                        <h2 class="personal__subscribe-title personal__subscribe-title--tablet">Получайте новости <br> обновлений коллекции</h2>
+
+                        <form action="POST" class="personal__subscribe-form">
+
+                            <input type="email" class="subscribe-form__input" placeholder="Укажите свой адрес электронной почты">
+
+                            <input type="email" class="subscribe-form__input subscribe-form__input--tablet" placeholder="Введите Email">
+
+                            <input type="submit" class="subscribe-form__btn" value="подписаться">
+
+                        </form>
 
                     </div>
 

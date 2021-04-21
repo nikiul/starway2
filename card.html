@@ -18,7 +18,7 @@
 </head>
 <body class="body--white">
 
-    <header class="header header--white">
+    <header class="header">
 
         <div class="container">
 
@@ -33,7 +33,7 @@
                     <img src="img/header/logo-mobile.svg" alt="">
                 </a>
 
-                <!-- <nav class="header__nav">
+                <nav class="header__nav">
 
                     <ul class="nav__list">
 
@@ -52,7 +52,7 @@
 
                     </ul>
 
-                </nav> -->
+                </nav>
 
                 <div class="header__control">
 
@@ -206,10 +206,14 @@
                         <div class="card__left-top">
                             <h1 class="card__title">
                                 Бамбуковые брюки
-                                <img src="img/card/card-like.svg" alt="">
+                                <!-- <img src="img/card/card-like.svg" alt=""> -->
+                                <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.2169 4.33559L12.1 5.99743L12.9831 4.33561C13.346 3.65255 13.9454 2.74964 14.8165 2.0559C15.707 1.34671 16.693 1 17.7719 1C20.7831 1 23.2 3.53208 23.2 7.17989C23.2 9.0925 22.4675 10.7397 21.0448 12.5075C19.5967 14.3068 17.5059 16.146 14.8739 18.4556L15.5173 19.1887L14.8739 18.4557L14.8732 18.4563C14.0354 19.1915 13.0878 20.0231 12.1 20.9103C11.113 20.0238 10.166 19.1928 9.32906 18.4583L9.32666 18.4561L9.32664 18.4561C6.69443 16.1462 4.60343 14.3069 3.15531 12.5076C1.73253 10.7396 1 9.0925 1 7.17989C1 3.53208 3.41695 1 6.42813 1C7.50703 1 8.49299 1.34671 9.38349 2.0559C10.2546 2.74965 10.854 3.65252 11.2169 4.33559Z" stroke="#FFB0B0" stroke-width="2"/>
+                                </svg>
+                                    
                             </h1>
 
-                            <p class="card__value">2000₽</p>
+                            <p class="card__value price">2000₽</p>
 
                             <p class="card__delivery">Бесплатная доставка от 5000 рублей</p>
                         </div>
@@ -228,7 +232,7 @@
 
                             <div class="sizes__list--mobile">
                                 <div class="size__current">
-                                    <span href="#" class="size-current__elem">s</span>
+                                    <span class="size-current__elem">s</span>
                                     <img src="img/btn-arrow.svg" alt="" class="size-btn">
                                 </div>
                                 <ul class="size__list">
@@ -247,13 +251,19 @@
 
                         </div>
 
-                        <ul class="card__height">
+                        <div class="card__height">
 
-                            <li class="height__item height__item--active">158-164</li>
-                            <li class="height__item">170-176</li>
-                            <li class="height__item">182-188</li>
+                            <p>Рост</p>
 
-                        </ul>
+                            <ul class="card__height-list">
+
+                                <li class="height__item height__item--active">158-164</li>
+                                <li class="height__item">170-176</li>
+                                <li class="height__item">182-188</li>
+
+                            </ul>
+
+                        </div>
 
                         <div class="card__colors">
 
@@ -275,7 +285,7 @@
 
                         <div class="card__accordeon">
 
-                            <div class="accordeon__item">
+                            <!-- <div class="accordeon__item">
 
                                 <h3 class="accordeon__title">
                                     Описание
@@ -316,11 +326,11 @@
 
                                 </div>
 
-                            </div>
+                            </div> -->
 
-                            <div class="accordeon__item">
+                            <!-- <div class="accordeon__item">
 
-                                <h3 class="accordeon__title">
+                                <h3 class="accordeon__title" data-name="accordeon-title">
                                     Таблица размеров
                                     <img class="accordeon__title-img" src="img/btn-arrow.svg" alt="">
                                 </h3>
@@ -377,9 +387,175 @@
 
                                 </div>
 
+                            </div> -->
+                            
+                            <div class="accordeon-group">
+
+                                <div class="accordeon-item">
+
+                                    <div class="accordeon-item-header" data-name="accordeon-title">
+                                        Описание
+                                        <img class="accordeon__title-img" src="img/btn-arrow.svg" alt="">  
+                                    </div>
+
+                                    <div class="accordeon-item-content loock hidden">
+                                        
+                                        <p class="accordeon__text">
+                                            Летящие свободные брюки с широкой резинкой на высокой посадке придадут воздушности твоему домашнему образу, и в то же время визуально удлинят ноги, подчернут талию и скроют все недостатки.
+                                        </p>
+    
+                                        <div class="accordeon__parametrs accordeon__parametrs-hide">
+    
+                                            <p class="parametrs__title">Длина изделия по внутреннему (шаговому) шву </p>
+    
+                                            <div class="paramerts__value">
+    
+                                                <div class="parametrs__left">
+                                                    <p>Рост</p>
+                                                    <p>155-164</p>
+                                                    <p>165-174</p>
+                                                    <p>175-184</p>
+                                                </div>
+    
+                                                <div class="parametrs__right">
+                                                    <p>Длина шва</p>
+                                                    <p>70см</p>
+                                                    <p>76см</p>
+                                                    <p>82см</p>
+                                                </div>
+    
+                                            </div>
+    
+                                            <p class="parametrs__structure ">Состав: Состав 97% бамбук, 3% эластан.</p>
+    
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="accordeon-item">
+
+                                    <div class="accordeon-item-header" data-name="accordeon-title">
+                                        Таблица размеров
+                                        <img class="accordeon__title-img" src="img/btn-arrow.svg" alt="">   
+                                    </div>
+
+                                    <div class="accordeon-item-content loock hidden">
+                                        
+                                        <div class="accordeon__table">
+
+                                            <div class="accordeon__table-left">
+                                                <span>Размер</span>
+                                                <span>XS</span>
+                                                <span>S</span>
+                                                <span>M</span>
+                                                <span>L</span>
+                                                <span>XL</span>
+                                            </div>
+    
+                                            <div class="accordeon__table-right">
+    
+                                                <div class="accordeon__table-title">Обхват (см)</div>
+    
+                                                <div class="accordion__table-wrap">
+
+                                                    <div class="accordeon__table-col">
+                                                        <span>Груди</span>
+                                                        <span>84</span>
+                                                        <span>88</span>
+                                                        <span>55</span>
+                                                        <span>55</span>
+                                                        <span>48</span>
+                                                    </div>
+    
+                                                    <div class="accordeon__table-col">
+                                                        <span>Талии</span>
+                                                        <span>64</span>
+                                                        <span>68</span>
+                                                        <span>34</span>
+                                                        <span>55</span>
+                                                        <span>8</span>
+                                                    </div>
+    
+                                                    <div class="accordeon__table-col">
+                                                        <span>Бедра</span>
+                                                        <span>90</span>
+                                                        <span>94</span>
+                                                        <span>99</span>
+                                                        <span>55</span>
+                                                        <span>25</span>
+                                                    </div>
+                                                    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="accordeon-item">
+
+                                    <div class="accordeon-item-header" data-name="accordeon-title">
+                                        Параметры модели
+                                        <img class="accordeon__title-img" src="img/btn-arrow.svg" alt="">
+                                    </div>
+
+                                    <div class="accordeon-item-content loock hidden">
+
+                                        <ul class="accordeon__list">
+                                            <li>На модели размер XS, 156-166</li>
+                                            <li>0г-80см</li>
+                                            <li>0т-64см</li>
+                                            <li>0б-85см</li>
+                                            <li>Рост 166см</li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="accordeon-item">
+                                    <div class="accordeon-item-header" data-name="accordeon-title">
+                                        Уход за изделием
+                                        <img class="accordeon__title-img" src="img/btn-arrow.svg" alt="">
+                                    </div>
+
+                                    <div class="accordeon-item-content loock hidden">
+
+                                        <ul class="accordeon__desc">
+                                            <li>
+                                                <img src="img/card/card-dot.svg" alt="">
+                                                <p>Машинная или ручная стирка при t не выше 30 С, использовать деликатное моющее средство и кондиционер.</p>
+                                            </li>
+                                            <li>
+                                                <img src="img/card/card-dot.svg" alt="">
+                                                <p>Утюжить изделие с изнанки в режиме «Хлопок».</p>
+                                            </li>
+                                            <li>
+                                                <img src="img/card/card-dot.svg" alt="">
+                                                <p>Сушить в расправленном виде, избегая попадания прямых солнечных лучей.</p>
+                                            </li>
+                                        </ul>
+    
+                                        <div class="accordeon__warning">
+                                            Внимание! После первой стирки изделие дает усадку в длину. Таблица размеров разработана уже с учетом этой усадки!
+                                        </div>
+    
+                                        <div class="accordeon__warning">
+                                            Все длины могут отличаться от указанных на +-1,5см.
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
                             </div>
                             
-                            <div class="accordeon__item">
+                            <!-- <div class="accordeon__item">
 
                                 <h3 class="accordeon__title">
                                     Параметры модели
@@ -398,9 +574,11 @@
 
                                 </div>
 
+                            </div> -->
+
+                            <!-- <div class="accordeon__item">
                             </div>
 
-                            <div class="accordeon__item">
 
                                 <h3 class="accordeon__title">
                                     Уход за изделием
@@ -434,7 +612,7 @@
 
                                 </div>
 
-                            </div>
+                            </div> -->
 
                         </div> 
 
@@ -531,8 +709,6 @@
 
             </div>
 
-            <!-- <div class="also__gradient"></div> -->
-
         </section>
 
         <div class="card__size-modal-wrap">
@@ -604,12 +780,20 @@
 
                             <div class="parametrs__quantity"> 
                                 
-                                <p>Количество: &ensp; </p>
+                                <!-- <p>Количество:</p>
 
-                                <span class="quantity__minus">- &ensp; </span>
-                                <span class="quantity__value">1 &ensp; </span>
-                                <span class="quantity__plus">+</span>
-                            
+                                <div class="counter">
+                                    <span>-</span>
+                                    <div class="counter__value">1</в>
+                                    <span>+</span>
+                                </div> -->
+
+                                <div class="params info-numbers"><span>Количество:</span>
+                                    <div class="counter"> <span>-</span>
+                                      <div class="counter__value">1  </div><span>+</span>
+                                    </div>
+                                </div>
+
                             </div>
 
                             <div class="parametrs__size">
@@ -637,7 +821,7 @@
                     </div>
 
                     <div class="cart-modal__right">
-                        <span class="cart-modal__right-cost">2000₽</span>
+                        <span class="cart-modal__right-cost info-price">2000₽</span>
                     </div>
 
                 </div>

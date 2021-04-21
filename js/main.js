@@ -82,46 +82,72 @@ $(window).scroll(function() {
 // Выбор размера
 var cardSize = document.querySelector(".sizes__list");
 
-cardSize.addEventListener("click", changeActiveSize);
-
-function changeActiveSize(event) {
-  if (event.target.classList.contains("sizes__item")) {
-    for (i = 0; i < cardSize.children.length; i++) {
-        cardSize.children[i].classList.remove("sizes__item--active");
+if(cardSize){
+    cardSize.addEventListener("click", changeActiveSize);
+ 
+    function changeActiveSize(event) {
+        if (event.target.classList.contains("sizes__item")) {
+          for (i = 0; i < cardSize.children.length; i++) {
+              cardSize.children[i].classList.remove("sizes__item--active");
+          }
+          event.target.classList.add("sizes__item--active");
+        }
     }
-    event.target.classList.add("sizes__item--active");
-  }
 }
+
 
 // Выбор роста
-var cardHeight = document.querySelector(".card__height");
+var cardHeight = document.querySelector(".card__height-list");
 
-cardHeight.addEventListener("click", changeActiveHeight);
-
-function changeActiveHeight(event) {
-  if (event.target.classList.contains("height__item")) {
-    for (i = 0; i < cardHeight.children.length; i++) {
-        cardHeight.children[i].classList.remove("height__item--active");
+if(cardHeight){
+    cardHeight.addEventListener("click", changeActiveHeight);
+ 
+    function changeActiveHeight(event) {
+        if (event.target.classList.contains("height__item")) {
+          for (i = 0; i < cardHeight.children.length; i++) {
+              cardHeight.children[i].classList.remove("height__item--active");
+          }
+          event.target.classList.add("height__item--active");
+        }
     }
-    event.target.classList.add("height__item--active");
-  }
 }
+
 
 // Выбор цвета
 var colorsSelector = document.querySelector(".color__wrap");
 
-colorsSelector.addEventListener("click", choiceColor);
-
-function choiceColor(event) {
-  if (event.target.classList.contains("color")) {
-    for (i = 0; i < colorsSelector.children.length; i++) {
-      colorsSelector.children[i].classList.remove("color--active");
+if(colorsSelector){
+    colorsSelector.addEventListener("click", choiceColor);
+ 
+    function choiceColor(event) {
+        if (event.target.classList.contains("color")) {
+          for (i = 0; i < colorsSelector.children.length; i++) {
+            colorsSelector.children[i].classList.remove("color--active");
+          }
+          event.target.classList.add("color--active");
+        }
     }
-    event.target.classList.add("color--active");
-  }
 }
 
-// Аккордеон
+
+// Аккордеон в card
+
+const accordeonTitle = document.querySelectorAll('[data-name="accordeon-title"]');
+
+accordeonTitle.forEach(function (item) {
+    item.addEventListener('click', showAccordeon);
+});
+
+function showAccordeon() {
+    this.classList.toggle('show');
+    let loock = this.nextElementSibling;
+    if (loock.style.maxHeight){
+    loock.style.maxHeight = null;
+    } else {
+        loock.style.maxHeight = loock.scrollHeight + "px";
+    }
+}
+
 const ratingCard = document.querySelectorAll('.accordeon__item');
 if(ratingCard) {
     for (let card of ratingCard) {
@@ -141,26 +167,57 @@ var sizeModalOpen = document.querySelector(".card__size-table");
 var sizeModalClose = document.querySelector(".size__modal-close");
 var sizeModal = document.querySelector(".card__size-modal-wrap");
 
-sizeModalOpen.addEventListener("click", function(){
-    sizeModal.classList.add("card__size-modal-wrap--active");
-});
+if(sizeModalOpen){
+    sizeModalOpen.addEventListener("click", function(){
+        sizeModal.classList.add("card__size-modal-wrap--active");
+    });
+}
 
-sizeModalClose.addEventListener("click", function(){
-    sizeModal.classList.remove("card__size-modal-wrap--active");
-});
+if(sizeModalClose){
+    sizeModalClose.addEventListener("click", function(){
+        sizeModal.classList.remove("card__size-modal-wrap--active");
+    });
+ 
+ 
+}
+
 
 // Модалка покупки
 var cartModalOpen = document.querySelector(".btn__card");
 var cartModalClose = document.querySelector(".cart__modal-close");
 var cartModal = document.querySelector(".card__cart-modal-wrap");
 
-cartModalOpen.addEventListener("click", function(){
-    cartModal.classList.add("card__cart-modal-wrap--active");
+if(cartModalOpen){
+    cartModalOpen.addEventListener("click", function(){
+        cartModal.classList.add("card__cart-modal-wrap--active");
+    });
+}
+
+let price = document.querySelector(".price");
+let counterValue = document.querySelector(".counter__value");
+let counterSpan = document.querySelectorAll(".counter span");
+let infoPrice = document.querySelector(".info-price");
+
+
+counterSpan.forEach(function (item, i) {
+    item.addEventListener("click", function () {
+        if (item.innerHTML == "-" && counterValue.innerHTML > 1) {
+            counterValue.innerHTML = +counterValue.innerHTML - 1;
+        }
+        if (item.innerHTML == "+") {
+            counterValue.innerHTML = +counterValue.innerHTML + 1;
+        }
+        infoPrice.innerHTML = parseFloat(price.innerHTML) * counterValue.innerHTML + "₽";
+    });
 });
 
-cartModalClose.addEventListener("click", function(){
-    cartModal.classList.remove("card__cart-modal-wrap--active");
-});
+
+if(cartModalClose){
+    cartModalClose.addEventListener("click", function(){
+        cartModal.classList.remove("card__cart-modal-wrap--active");
+    });
+}
+
 
 //also карусель
 $(document).ready(function(){
@@ -199,16 +256,20 @@ $(document).ready(function(){
 // Добавляем рамку к миниатюрам при клике
 var cardSliderMin = document.querySelector(".card__slider-min");
 
-cardSliderMin.addEventListener("click", changeBorder);
+if(cardSliderMin){
+    cardSliderMin.addEventListener("click", changeBorder);
 
-function changeBorder(event) {
-  if (event.target.classList.contains("slider-min__item")) {
-    for (i = 0; i < cardSliderMin.children.length; i++) {
-        cardSliderMin.children[i].classList.remove("slider-min__item--active");
+    function changeBorder(event) {
+        if (event.target.classList.contains("slider-min__item")) {
+        for (i = 0; i < cardSliderMin.children.length; i++) {
+            cardSliderMin.children[i].classList.remove("slider-min__item--active");
+        }
+        event.target.classList.add("slider-min__item--active");
+        }
     }
-    event.target.classList.add("slider-min__item--active");
-  }
+
 }
+
 
 // Синхронизированные слайдеры в card__right
 $('.card__slider-big').slick({
@@ -279,3 +340,75 @@ $(document).mouseup(function (e){
         sizeBtn.removeClass('isactive');
     }
 });
+
+// var dataWrap = document.querySelectorAll(".bday__wrap");
+
+// ratingCard.forEach(function(item) {
+//     var addBtn = item.querySelector(".card__add-block");
+//     var textBtn = item.querySelector(".card__add-block-btn");
+//     var imgBtn = item.querySelector(".card__arrow");
+//     var imgBtnWhite = item.querySelector(".card__arrow--white");
+//     var addContent = item.querySelector(".card__add-wrap");
+//     var addBtnClose = item.querySelector(".add__arrow")
+
+//     addBtn.addEventListener("click", function(){
+
+//         imgBtn.classList.toggle("card__arrow-active");
+//         imgBtnWhite.classList.toggle("card__arrow-active")
+//         addContent.classList.toggle("hidden");
+
+//     });
+
+//     addBtnClose.addEventListener("click", function(){
+//         addContent.classList.add("hidden")
+//     })
+// })
+
+// ---------- personal-area ---------
+
+// выпадающий список дней 
+var bday = $(".bday__list-wrap");
+var bdayList = $('.bday__list');
+var bdayBtn = $('.bday-btn');
+var bdayCurrent = $('.bday-current__elem');
+
+bdayBtn.click(function(e){
+    bdayList.fadeToggle();
+    $(this).toggleClass('bday-isactive')
+});
+
+bdayList.on('click', '.bday__elem', function(){
+    var th = $(this);
+    var thText = th.text();
+    bdayCurrent
+    .text(thText)
+    .attr('href', 'bday__list-wrap:'+thText+'');
+    bdayList.fadeOut();
+    bdayBtn.removeClass('bday-isactive');
+});
+
+$(document).mouseup(function (e){
+    if (!bday.is(e.target)
+    && bday.has(e.target).length === 0) {
+        bdayList.fadeOut();
+        bdayBtn.removeClass('bday-isactive');
+    }
+});
+
+// personal-history 
+// aккордеон
+const ordersItemTitle = document.querySelectorAll('[data-name="orders__item-title"]');
+
+ordersItemTitle.forEach(function (item) {
+    item.addEventListener('click', showOrdersItem);
+});
+
+function showOrdersItem() {
+    this.classList.toggle('show');
+    let loock = this.nextElementSibling;
+    if (loock.style.maxHeight){
+    loock.style.maxHeight = null;
+    } else {
+        loock.style.maxHeight = loock.scrollHeight + "px";
+    }
+}

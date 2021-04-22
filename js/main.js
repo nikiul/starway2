@@ -412,3 +412,33 @@ function showOrdersItem() {
         loock.style.maxHeight = loock.scrollHeight + "px";
     }
 }
+
+
+// --------- catalog ---------
+// аккордеон в боковом меню
+const sideItemTitle = document.querySelectorAll('[data-name="side-title"]');
+
+sideItemTitle.forEach(function (item) {
+    item.addEventListener('click', showSideItem);
+});
+
+function showSideItem() {
+    let lock = this.nextElementSibling;
+    if (lock.style.maxHeight){
+    lock.style.maxHeight = null;
+    } else {
+        lock.style.maxHeight = lock.scrollHeight + "px";
+    }
+}
+
+// catalog
+var catalogBtn = document.querySelector(".catalog__btn");
+var catalogSide = document.querySelector(".catalog__side");
+var catalogSideBtn = document.querySelector(".catalog__side-btn")
+catalogBtn.addEventListener("click", function(){
+    catalogSide.classList.toggle('catalog__side--active');
+})
+
+catalogSideBtn.addEventListener("click", function(){
+    catalogSide.classList.toggle('catalog__side--active');
+})

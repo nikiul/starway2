@@ -177,8 +177,6 @@ if(sizeModalClose){
     sizeModalClose.addEventListener("click", function(){
         sizeModal.classList.remove("card__size-modal-wrap--active");
     });
- 
- 
 }
 
 
@@ -193,11 +191,18 @@ if(cartModalOpen){
     });
 }
 
+if(cartModalClose){
+    cartModalClose.addEventListener("click", function(){
+        cartModal.classList.remove("card__cart-modal-wrap--active");
+    });
+}
+
+
+
 let price = document.querySelector(".price");
 let counterValue = document.querySelector(".counter__value");
 let counterSpan = document.querySelectorAll(".counter span");
 let infoPrice = document.querySelector(".info-price");
-
 
 counterSpan.forEach(function (item, i) {
     item.addEventListener("click", function () {
@@ -212,11 +217,6 @@ counterSpan.forEach(function (item, i) {
 });
 
 
-if(cartModalClose){
-    cartModalClose.addEventListener("click", function(){
-        cartModal.classList.remove("card__cart-modal-wrap--active");
-    });
-}
 
 
 //also карусель
@@ -435,10 +435,23 @@ function showSideItem() {
 var catalogBtn = document.querySelector(".catalog__btn");
 var catalogSide = document.querySelector(".catalog__side");
 var catalogSideBtn = document.querySelector(".catalog__side-btn")
-catalogBtn.addEventListener("click", function(){
-    catalogSide.classList.toggle('catalog__side--active');
-})
 
-catalogSideBtn.addEventListener("click", function(){
-    catalogSide.classList.toggle('catalog__side--active');
-})
+// catalogBtn.addEventListener("click", function(){
+//     catalogSide.classList.toggle('catalog__side--active');
+// })
+
+// catalogSideBtn.addEventListener("click", function(){
+//     catalogSide.classList.toggle('catalog__side--active');
+// })
+
+if(catalogBtn){
+    catalogBtn.addEventListener("click", function(){
+        catalogSide.classList.toggle('catalog__side--active');
+    })
+}
+
+if(catalogSideBtn){
+    catalogSideBtn.addEventListener("click", function(){
+        catalogSide.classList.toggle('catalog__side--active');
+    })
+}

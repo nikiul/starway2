@@ -3168,11 +3168,6 @@ img {
     width: 100%;
   }
 }
-@media (max-width: 515px) {
-  .card__left-top {
-    display: none;
-  }
-}
 .card__title {
   margin: 0;
   margin-bottom: 30px;
@@ -3193,6 +3188,16 @@ img {
 @media (max-width: 640px) {
   .card__title {
     font-size: 25px;
+  }
+}
+@media (max-width: 515px) {
+  .card__title {
+    display: none;
+  }
+}
+@media (max-width: 515px) {
+  .card__title--mobile {
+    display: block;
   }
 }
 .card__value {
@@ -3218,7 +3223,17 @@ img {
 }
 @media (max-width: 515px) {
   .card__value {
-    margin-bottom: 65px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 515px) {
+  .card__value {
+    display: none;
+  }
+}
+@media (max-width: 515px) {
+  .card__value--mobile {
+    display: block;
   }
 }
 .card__delivery {

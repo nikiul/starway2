@@ -198,7 +198,6 @@ if(cartModalClose){
 }
 
 
-
 let price = document.querySelector(".price");
 let counterValue = document.querySelector(".counter__value");
 let counterSpan = document.querySelectorAll(".counter span");
@@ -215,8 +214,6 @@ counterSpan.forEach(function (item, i) {
         infoPrice.innerHTML = parseFloat(price.innerHTML) * counterValue.innerHTML + "₽";
     });
 });
-
-
 
 
 //also карусель
@@ -284,7 +281,7 @@ $('.card__slider-big').slick({
 	      settings: {
 	        slidesToShow: 1,
             arrows: true,
-            verticalSwiping: true,
+            // verticalSwiping: true,
             swipe: true,
             prevArrow: '<div class="card__slider-prev"></div>',
             nextArrow: '<div class="card__slider-next"></div>',

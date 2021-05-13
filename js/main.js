@@ -129,7 +129,6 @@ if(colorsSelector){
     }
 }
 
-
 // Аккордеон в card
 
 const accordeonTitle = document.querySelectorAll('[data-name="accordeon-title"]');
@@ -432,14 +431,6 @@ function showSideItem() {
 var catalogBtn = document.querySelector(".catalog__btn");
 var catalogSide = document.querySelector(".catalog__side");
 var catalogSideBtn = document.querySelector(".catalog__side-btn")
-
-// catalogBtn.addEventListener("click", function(){
-//     catalogSide.classList.toggle('catalog__side--active');
-// })
-
-// catalogSideBtn.addEventListener("click", function(){
-//     catalogSide.classList.toggle('catalog__side--active');
-// })
 
 if(catalogBtn){
     catalogBtn.addEventListener("click", function(){

@@ -889,6 +889,15 @@
     }
 }
 
+.card__slider-min .slick-arrow {
+    display: none !important;
+}
+
+.card__slider-min.slick-slider .slick-list {
+    height: 747px !important;
+    // padding-top: 10px;
+}
+
 .slider-min__item {
     margin-bottom: 10px;
     width: 100px;
@@ -939,8 +948,14 @@
     outline: none;
 }
 
+.slider-min__item.slick-slide {
+    border: 2px solid transparent !important;
+    width: 100px !important;
+}
+
 .slider-min__item.slick-slide.slick-current.slick-active {
-    border: 2px solid #FFB0B0;
+    border: 2px solid #FFB0B0 !important;
+    width: 100px !important;
 }
 
 .card__slider-prev {
